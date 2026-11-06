@@ -70,6 +70,10 @@ How each analysis handles this:
 - Events with a placeholder or null transaction id (906 events, 883 + 23) cannot be de-duplicated, so they are left out of revenue. Of the 883 placeholder events, 450 also have null revenue. This means revenue and AOV are **understated, and the size of the gap is not measurable** from this data. Any revenue number in this project carries that note.
 - Purchase events are 5,692 but real distinct transaction ids are 4,451. Purchase counts based on events would be overstated by duplicates, so event counts are never reported as "orders".
 
+## Item ids differ between event types
+
+Item ids in `purchase` events are numeric (for example `9195292`), while `view_item` and `add_to_cart` events use another scheme (for example `GGOEG...`). Joining views to purchases on `item_id` would put 305,014 of 307,562 item revenue on products with no views (measured while building `sql/31_product_table.sql`). Product tables that combine views, carts and revenue therefore use `item_name`. After joining by name, 8 of 390 purchased products have no views (12,039 item revenue, `results/31_product_table.csv`). Product add-to-cart rates in `sql/28_*.sql` compare view and cart events only, which share one id scheme.
+
 ## What is not usable
 
 - City level analysis.
