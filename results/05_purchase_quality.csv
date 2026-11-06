@@ -1,0 +1,2 @@
+purchase_events,distinct_transaction_ids,null_tid,placeholder_tid,null_revenue,zero_revenue,negative_revenue,min_revenue,max_revenue,median_revenue,buyers
+5692,4452,23,883,450,0,0,1.0,1530.0,48.0,4419

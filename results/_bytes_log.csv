@@ -1,2 +1,8 @@
 timestamp_utc,query,dry_run_bytes,billed_bytes,rows,status
 2026-11-06T18:09:51+00:00,sql\00_smoke_test.sql,0,0,1,ok
+2026-11-06T18:22:03+00:00,sql\01_profile_overview.sql,982194818,982515712,1,ok
+2026-11-06T18:22:15+00:00,sql\02_event_names.sql,144760034,145752064,17,ok
+2026-11-06T18:22:26+00:00,sql\03_missing_values.sql,295346900,295698432,7,ok
+2026-11-06T18:22:38+00:00,sql\04_missing_values_items.sql,251923772,252706816,3,ok
+2026-11-06T18:22:48+00:00,sql\05_purchase_quality.sql,152996490,153092096,1,ok
+2026-11-06T18:23:13+00:00,sql\06_purchase_dedup.sql,64191017,65011712,11,ok

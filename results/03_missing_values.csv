@@ -1,0 +1,8 @@
+field,rows_total,null_n,empty_n,data_deleted_n,not_set_n,other_placeholder_n,pct_unusable
+device.category,4295584,0,0,0,0,0,0.0
+device.operating_system,4295584,0,0,0,0,110323,2.57
+geo.city,4295584,0,0,0,1795444,0,41.8
+geo.country,4295584,0,0,0,32208,0,0.75
+traffic_source.medium,4295584,0,0,313917,0,597482,21.22
+traffic_source.name,4295584,0,0,306045,0,782379,25.34
+traffic_source.source,4295584,0,0,308695,0,1131013,33.52

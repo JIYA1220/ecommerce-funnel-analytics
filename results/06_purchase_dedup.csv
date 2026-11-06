@@ -1,0 +1,12 @@
+measure,value
+real tids: extra duplicate events,335
+real tids: with more than 1 event,326
+real tids: distinct,4451
+events: tid placeholder,883
+"events: tid null, revenue null",0
+real tids: all events revenue null,0
+"events: tid placeholder, revenue null",450
+"events: tid real, revenue null",0
+events: tid null,23
+events: tid real,4786
+real tids: duplicates with differing revenue,15

@@ -2,7 +2,7 @@
 
 Work in progress. Funnel, retention and segmentation analysis of the Google Merchandise Store GA4 sample dataset (BigQuery), a business analyst pack, and an A/B test analysis.
 
-Status: Phase 0 (scaffolding) only. No results yet; every number in this repo will come from a saved query or script output in `results/`.
+Status: Phases 0 and 1 done (scaffolding, data profile and quality). Funnel results come in Phase 2; every number in this repo will come from a saved query or script output in `results/`.
 
 ## Setup (PowerShell)
 
