@@ -39,4 +39,6 @@ Short version:
 
 ## Phase 4 (A/B test): Cookie Cats
 
-Mobile game A/B test (Kaggle), gate at level 30 vs level 40. Downloaded by hand. Not yet used. License check is part of Phase 5.
+Mobile game A/B test (Kaggle, https://www.kaggle.com/datasets/yufengsui/mobile-games-ab-testing), gate at level 30 vs level 40, from a DataCamp project. Downloaded by hand into `ab_test/data/` (not committed).
+
+**License: the Kaggle page lists it as Unknown** (checked 2026-11-07). It was used anyway on the owner's decision, for analysis only: the raw file is not redistributed, and only code and aggregated results are committed. Reuse of the raw data is at your own risk.
