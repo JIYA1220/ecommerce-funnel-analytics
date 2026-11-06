@@ -71,4 +71,4 @@ One player (`userid`) is the unit, assumed to be assigned once at install. Each 
 
 ## Changes after the data was seen
 
-None yet.
+None. The analysis ran once, with the plan as written. Note: the sample ratio check gave p = 0.0086, which is under 0.05 but above the stop threshold of 0.001 set here, so the analysis went ahead, and the memo reports it as a limitation.

@@ -1,0 +1,9 @@
+{
+  "baseline_7day_retention_control": 0.19020134228187918,
+  "n_control": 44700,
+  "n_treatment": 45489,
+  "alpha": 0.05,
+  "power": 0.8,
+  "mde_pp": 0.7376150061811748,
+  "n_per_group_for_1pp": 24658
+}

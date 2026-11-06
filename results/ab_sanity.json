@@ -1,0 +1,23 @@
+{
+  "rows_in_file": 90189,
+  "exact_duplicate_rows_dropped": 0,
+  "userids_repeated_after_exact_dedup": 0,
+  "userids_in_both_groups_excluded": 0,
+  "players_analysed": 90189,
+  "n_control": 44700,
+  "n_treatment": 45489,
+  "share_control": 0.49562585237667567,
+  "srm_chi2": 6.9024049496058275,
+  "srm_p_value": 0.008607987810836262,
+  "srm_alpha": 0.001,
+  "srm_failed": false,
+  "rounds_percentiles": {
+    "p50": 16.0,
+    "p90": 134.0,
+    "p99": 493.0,
+    "p99.9": 1073.6240000000107
+  },
+  "rounds_max": 49854.0,
+  "players_with_zero_rounds": 3994,
+  "players_above_p99_9": 91
+}
