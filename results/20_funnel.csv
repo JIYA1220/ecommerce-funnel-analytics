@@ -1,0 +1,7 @@
+step_no,step,sessions_ordered,sessions_unordered,step_to_step_conversion,conversion_from_entry,sessions_lost_at_step,dropoff_share,all_valid_sessions
+1,entry (session_start or page_view),359815,359815,,1.0,,,360129
+2,view_item,76965,77020,0.2139,0.2139,282850,0.7861,360129
+3,add_to_cart,15162,15188,0.197,0.0421,61803,0.803,360129
+4,begin_checkout,5416,11106,0.3572,0.0151,9746,0.6428,360129
+5,add_payment_info,3831,6815,0.7073,0.0106,1585,0.2927,360129
+6,purchase,2834,4848,0.7398,0.0079,997,0.2602,360129

@@ -42,7 +42,7 @@ Steps, in order:
 | Overall funnel conversion | sessions reaching purchase / sessions reaching Entry |
 | Session conversion rate | sessions with at least one `purchase` event / all valid sessions |
 | User conversion rate | users with at least one `purchase` event / all users with a valid session |
-| Add-to-cart rate (product) | sessions with `add_to_cart` for the item / sessions with `view_item` for the item |
+| Add-to-cart rate (product) | sessions with both `view_item` and `add_to_cart` for the item (same session, any order) / sessions with `view_item` for the item |
 
 The session conversion rate uses all valid sessions as the base. The overall funnel conversion uses sessions reaching Entry as the base. These can differ slightly. Both are labeled where used.
 
@@ -91,3 +91,6 @@ A session takes the segment value from its first event. A segment with fewer tha
 
 - Phase 1: first version.
 - Phase 1 (after profiling): purchase and revenue definitions now exclude events without a real transaction id and keep one event per id, because 5,692 purchase events map to 4,451 real ids plus 906 events with no usable id.
+- Phase 2: product add-to-cart rate now counts only sessions that also viewed the item, so the rate stays between 0 and 100%.
+- Phase 2: in `sql/21_funnel_skipping.sql`, "chain broken" means the previous step event exists but the strict chain is broken (wrong order here, or an earlier step missing or out of order).
+- Phase 2: reach time of step k is the earliest step k event at or after the reach time of step k-1 (clarifies the order rule).

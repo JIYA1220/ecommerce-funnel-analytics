@@ -1,0 +1,21 @@
+kind,rank,name,item_revenue,units,transactions,share_of_item_revenue,total_item_revenue
+category,1,Apparel,144437.0,4592,2539,0.4696,307562.0
+category,2,New,22047.0,1817,901,0.0717,307562.0
+category,3,Bags,21238.0,953,526,0.0691,307562.0
+category,4,Campus Collection,16524.0,1839,705,0.0537,307562.0
+category,5,Accessories,15124.0,1686,758,0.0492,307562.0
+category,6,Shop by Brand,14647.0,1072,662,0.0476,307562.0
+category,7,Uncategorized Items,14634.0,646,389,0.0476,307562.0
+category,8,Drinkware,13387.0,946,551,0.0435,307562.0
+category,9,Lifestyle,11254.0,673,456,0.0366,307562.0
+category,10,Clearance,10105.0,800,462,0.0329,307562.0
+product,1,Google Zip Hoodie F/C,10488.0,208,187,0.0341,307562.0
+product,2,Google Crewneck Sweatshirt Navy,9878.0,217,196,0.0321,307562.0
+product,3,Google Badge Heavyweight Pullover Black,8444.0,175,149,0.0275,307562.0
+product,4,Google Men's Tech Fleece Grey,7886.0,107,87,0.0256,307562.0
+product,5,Super G Unisex Joggers,7826.0,252,220,0.0254,307562.0
+product,6,Google Crewneck Sweatshirt Green,7095.0,155,146,0.0231,307562.0
+product,7,Google Men's Tech Fleece Vest Charcoal,5234.0,79,62,0.017,307562.0
+product,8,Google Men's Puff Jacket Black,5221.0,55,52,0.017,307562.0
+product,9,Google Sherpa Zip Hoodie Charcoal,4953.0,89,78,0.0161,307562.0
+product,10,Google Canteen Bottle Black,4892.0,248,128,0.0159,307562.0

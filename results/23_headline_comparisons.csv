@@ -1,0 +1,5 @@
+dimension,highest_segment,highest_sessions,highest_rate,highest_ci_low,highest_ci_high,lowest_segment,lowest_sessions,lowest_rate,lowest_ci_low,lowest_ci_high,diff_percentage_points,verdict
+country,Spain,6667,0.01485,0.01221,0.01804,Italy,4998,0.011,0.00846,0.0143,0.384,not distinguishable from noise (intervals overlap)
+device_category,mobile,143185,0.01393,0.01334,0.01455,tablet,8002,0.013,0.01074,0.01572,0.094,not distinguishable from noise (intervals overlap)
+traffic_medium (first touch),referral,63524,0.01662,0.01566,0.01765,cpc,15618,0.0098,0.00837,0.01147,0.683,larger than noise (intervals do not overlap)
+visitor_type,returning,98891,0.03102,0.02996,0.03212,new,261238,0.00681,0.00651,0.00714,2.421,larger than noise (intervals do not overlap)

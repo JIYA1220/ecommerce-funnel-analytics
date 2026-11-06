@@ -1,0 +1,2 @@
+sessions_with_purchase,missing_entry,missing_view_item,missing_add_to_cart,missing_begin_checkout,missing_add_payment_info,has_all_steps,full_ordered_path,all_valid_sessions,session_conversion_rate
+4848,0,150,2000,3,3,2848,2834,360129,0.01346

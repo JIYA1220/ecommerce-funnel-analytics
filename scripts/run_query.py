@@ -21,6 +21,7 @@ from pathlib import Path
 
 GB = 1024**3
 DEFAULT_MAX_GB = 1.0
+DEFAULT_DATASET = "funnel"
 RESULTS_DIR = Path("results")
 LOG_NAME = "_bytes_log.csv"
 LOG_FIELDS = ["timestamp_utc", "query", "dry_run_bytes", "billed_bytes", "rows", "status"]
@@ -87,16 +88,31 @@ def total_logged_bytes(log_path: Path) -> int:
         )
 
 
-def run(sql_path: Path, project: str, max_gb: float, dry_run_only: bool, name: str | None) -> int:
+def should_save_csv(statement_type: str | None) -> bool:
+    """Only SELECT results are saved as CSV. DDL such as CREATE TABLE has no result set."""
+    return (statement_type or "SELECT") == "SELECT"
+
+
+def run(sql_path: Path, project: str, max_gb: float, dry_run_only: bool, name: str | None,
+        dataset: str = DEFAULT_DATASET) -> int:
     from google.cloud import bigquery  # imported here so helpers test without the SDK
+    from google.cloud.exceptions import NotFound
 
     client = bigquery.Client(project=project)
+    default_dataset = None
+    if dataset:
+        try:
+            client.get_dataset(f"{project}.{dataset}")
+            default_dataset = f"{project}.{dataset}"
+        except NotFound:
+            pass  # run scripts.setup_dataset first if the SQL uses unqualified table names
     sql = read_sql(sql_path)
     max_bytes = int(max_gb * GB)
     log_path = RESULTS_DIR / LOG_NAME
     ts = datetime.now(timezone.utc).isoformat(timespec="seconds")
 
-    dry = client.query(sql, job_config=bigquery.QueryJobConfig(dry_run=True, use_query_cache=False))
+    dry = client.query(sql, job_config=bigquery.QueryJobConfig(
+        dry_run=True, use_query_cache=False, default_dataset=default_dataset))
     est = int(dry.total_bytes_processed or 0)
     print(f"[dry run] {sql_path}: will scan {format_bytes(est)} ({est} bytes)")
     try:
@@ -109,11 +125,17 @@ def run(sql_path: Path, project: str, max_gb: float, dry_run_only: bool, name: s
     if dry_run_only:
         return 0
 
-    job = client.query(sql, job_config=bigquery.QueryJobConfig(maximum_bytes_billed=max_bytes))
-    df = job.result().to_dataframe()
+    job = client.query(sql, job_config=bigquery.QueryJobConfig(
+        maximum_bytes_billed=max_bytes, default_dataset=default_dataset))
+    result = job.result()
     out = result_path(sql_path, RESULTS_DIR, name)
-    out.parent.mkdir(parents=True, exist_ok=True)
-    df.to_csv(out, index=False)
+    if should_save_csv(job.statement_type):
+        df = result.to_dataframe()
+        out.parent.mkdir(parents=True, exist_ok=True)
+        df.to_csv(out, index=False)
+    else:
+        df = []
+        out = f"(no CSV, {job.statement_type})"
     billed = int(job.total_bytes_billed or 0)
     processed = int(job.total_bytes_processed or 0)
     append_log(log_path, {"timestamp_utc": ts, "query": str(sql_path), "dry_run_bytes": est,
@@ -128,6 +150,8 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("sql", nargs="?", type=Path, help="path to a .sql file")
     p.add_argument("--project", default=os.environ.get("GOOGLE_CLOUD_PROJECT"))
     p.add_argument("--max-gb", type=float, default=DEFAULT_MAX_GB, help="scan limit in GB (default 1)")
+    p.add_argument("--dataset", default=DEFAULT_DATASET,
+                   help="default dataset for unqualified table names (default: funnel)")
     p.add_argument("--dry-run-only", action="store_true")
     p.add_argument("--name", help="output name (default: SQL file stem)")
     p.add_argument("--total", action="store_true", help="print total bytes logged and exit")
@@ -141,7 +165,7 @@ def main(argv: list[str] | None = None) -> int:
         p.error("sql file is required")
     if not args.project:
         p.error("set --project or the GOOGLE_CLOUD_PROJECT environment variable")
-    return run(args.sql, args.project, args.max_gb, args.dry_run_only, args.name)
+    return run(args.sql, args.project, args.max_gb, args.dry_run_only, args.name, args.dataset)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,6 @@
+step_no,step,has_step,reached_in_order,not_in_order_or_skipped,gap_prev_absent,gap_prev_present_chain_broken,share_of_step_sessions_not_in_order
+2,view_item,77020,76965,55,32,23,0.0007
+3,add_to_cart,15188,15162,26,15,11,0.0017
+4,begin_checkout,11106,5416,5690,5145,545,0.5123
+5,add_payment_info,6815,3831,2984,2,2982,0.4379
+6,purchase,4848,2834,2014,3,2011,0.4154

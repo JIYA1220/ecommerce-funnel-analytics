@@ -70,3 +70,9 @@ def test_forbidden_names():
     assert check_secrets.is_forbidden_name("application_default_credentials.json")
     assert not check_secrets.is_forbidden_name(".env.example")
     assert not check_secrets.is_forbidden_name("README.md")
+
+
+def test_should_save_csv():
+    assert rq.should_save_csv("SELECT")
+    assert rq.should_save_csv(None)
+    assert not rq.should_save_csv("CREATE_TABLE_AS_SELECT")
