@@ -1,0 +1,16 @@
+metric,value
+Revenue (north star),307640.0
+Sessions,360129
+New sessions,261238
+Returning sessions,98891
+Orders (distinct real transaction ids),4451
+Orders per session,0.01236
+AOV,69.12
+Revenue check: sessions x orders per session x AOV,307640.0
+Entry to view_item,0.2139
+view_item to add_to_cart,0.197
+add_to_cart to begin_checkout,0.3572
+begin_checkout to add_payment_info,0.7073
+add_payment_info to purchase,0.7398
+begin_checkout to purchase,0.5233
+Overall funnel conversion (entry to purchase),0.00788
