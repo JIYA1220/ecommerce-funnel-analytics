@@ -1,0 +1,2 @@
+timestamp_utc,query,dry_run_bytes,billed_bytes,rows,status
+2026-11-06T18:09:51+00:00,sql\00_smoke_test.sql,0,0,1,ok
