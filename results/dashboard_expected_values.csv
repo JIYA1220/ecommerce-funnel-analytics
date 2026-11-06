@@ -1,0 +1,35 @@
+metric,value,source
+Sessions,360129,20_funnel.csv
+Sessions with purchase,4848,21b_purchase_sessions_missing_steps.csv
+Session conversion rate,0.01346,derived: sessions with purchase / sessions
+Session conversion Wilson low,0.01309,derived (Wilson 95%)
+Session conversion Wilson high,0.01384,derived (Wilson 95%)
+Purchases,4451,26_revenue_by_segment.csv
+Revenue,307640.0,26_revenue_by_segment.csv
+AOV,69.12,26_revenue_by_segment.csv
+Users,270154,26_revenue_by_segment.csv
+Revenue per user,1.1388,26_revenue_by_segment.csv
+Funnel step 1 sessions,359815,20_funnel.csv
+Funnel step 2 sessions,76965,20_funnel.csv
+Funnel step 2 step conversion,0.2139,20_funnel.csv
+Funnel step 2 drop-off,0.7861,20_funnel.csv
+Funnel step 3 sessions,15162,20_funnel.csv
+Funnel step 3 step conversion,0.197,20_funnel.csv
+Funnel step 3 drop-off,0.803,20_funnel.csv
+Funnel step 4 sessions,5416,20_funnel.csv
+Funnel step 4 step conversion,0.3572,20_funnel.csv
+Funnel step 4 drop-off,0.6428,20_funnel.csv
+Funnel step 5 sessions,3831,20_funnel.csv
+Funnel step 5 step conversion,0.7073,20_funnel.csv
+Funnel step 5 drop-off,0.2927,20_funnel.csv
+Funnel step 6 sessions,2834,20_funnel.csv
+Funnel step 6 step conversion,0.7398,20_funnel.csv
+Funnel step 6 drop-off,0.2602,20_funnel.csv
+Overall funnel conversion,0.0079,20_funnel.csv
+"Session conversion, new",0.00681,22_segment_funnel.csv
+"Session conversion, returning",0.03102,22_segment_funnel.csv
+"Retention week 1 (all full cohorts, weighted)",0.042,derived from 24_retention_long.csv: 10431 / 248347
+"Retention week 2 (all full cohorts, weighted)",0.0186,derived from 24_retention_long.csv: 4232 / 227649
+"Retention week 4 (all full cohorts, weighted)",0.0118,derived from 24_retention_long.csv: 2164 / 183308
+Top product by revenue,Google Zip Hoodie F/C,31_product_table.csv
+Top product item revenue,10488.0,31_product_table.csv

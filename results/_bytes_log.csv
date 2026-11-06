@@ -28,3 +28,6 @@ timestamp_utc,query,dry_run_bytes,billed_bytes,rows,status
 2026-11-06T18:54:24+00:00,sql\27_top_products_categories.sql,274746249,275775488,20,ok
 2026-11-06T18:54:30+00:00,sql\28_low_add_to_cart_products.sql,288966521,289406976,20,ok
 2026-11-06T18:54:35+00:00,sql\29_time_patterns.sql,3241161,10485760,24,ok
+2026-11-06T18:58:56+00:00,sql\30_daily_kpis.sql,6193409,20971520,92,ok
+2026-11-06T18:59:02+00:00,sql\31_product_table.sql,424694843,425721856,1356,ok
+2026-11-06T18:59:32+00:00,sql\31_product_table.sql,373143680,373293056,430,ok

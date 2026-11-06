@@ -1,0 +1,23 @@
+segment_key,dimension,segment,sessions,reliable
+all|all sessions,all,all sessions,360129,TRUE
+country|United States,country,United States,158155,TRUE
+country|Other,country,Other,92519,TRUE
+country|India,country,India,33769,TRUE
+country|Canada,country,Canada,26824,TRUE
+country|United Kingdom,country,United Kingdom,11327,TRUE
+country|France,country,France,7162,TRUE
+country|Spain,country,Spain,6667,TRUE
+country|Germany,country,Germany,6393,TRUE
+country|China,country,China,6258,TRUE
+country|Taiwan,country,Taiwan,6057,TRUE
+country|Italy,country,Italy,4998,TRUE
+device_category|desktop,device_category,desktop,208942,TRUE
+device_category|mobile,device_category,mobile,143185,TRUE
+device_category|tablet,device_category,tablet,8002,TRUE
+traffic_medium (first touch)|organic,traffic_medium (first touch),organic,122841,TRUE
+traffic_medium (first touch)|(none),traffic_medium (first touch),(none),83459,TRUE
+traffic_medium (first touch)|unknown,traffic_medium (first touch),unknown,74687,TRUE
+traffic_medium (first touch)|referral,traffic_medium (first touch),referral,63524,TRUE
+traffic_medium (first touch)|cpc,traffic_medium (first touch),cpc,15618,TRUE
+visitor_type|new,visitor_type,new,261238,TRUE
+visitor_type|returning,visitor_type,returning,98891,TRUE

@@ -1,0 +1,133 @@
+segment_key,dimension,segment,step_no,step,sessions
+all|all sessions,all,all sessions,1,entry,359815
+all|all sessions,all,all sessions,2,view_item,76965
+all|all sessions,all,all sessions,3,add_to_cart,15162
+all|all sessions,all,all sessions,4,begin_checkout,5416
+all|all sessions,all,all sessions,5,add_payment_info,3831
+all|all sessions,all,all sessions,6,purchase,2834
+country|United States,country,United States,1,entry,158015
+country|United States,country,United States,2,view_item,33902
+country|United States,country,United States,3,add_to_cart,6738
+country|United States,country,United States,4,begin_checkout,2411
+country|United States,country,United States,5,add_payment_info,1683
+country|United States,country,United States,6,purchase,1261
+country|Other,country,Other,1,entry,92444
+country|Other,country,Other,2,view_item,19684
+country|Other,country,Other,3,add_to_cart,3835
+country|Other,country,Other,4,begin_checkout,1365
+country|Other,country,Other,5,add_payment_info,988
+country|Other,country,Other,6,purchase,699
+country|India,country,India,1,entry,33738
+country|India,country,India,2,view_item,7253
+country|India,country,India,3,add_to_cart,1387
+country|India,country,India,4,begin_checkout,486
+country|India,country,India,5,add_payment_info,344
+country|India,country,India,6,purchase,259
+country|Canada,country,Canada,1,entry,26802
+country|Canada,country,Canada,2,view_item,5849
+country|Canada,country,Canada,3,add_to_cart,1183
+country|Canada,country,Canada,4,begin_checkout,438
+country|Canada,country,Canada,5,add_payment_info,314
+country|Canada,country,Canada,6,purchase,231
+country|United Kingdom,country,United Kingdom,1,entry,11314
+country|United Kingdom,country,United Kingdom,2,view_item,2398
+country|United Kingdom,country,United Kingdom,3,add_to_cart,467
+country|United Kingdom,country,United Kingdom,4,begin_checkout,164
+country|United Kingdom,country,United Kingdom,5,add_payment_info,116
+country|United Kingdom,country,United Kingdom,6,purchase,92
+country|France,country,France,1,entry,7154
+country|France,country,France,2,view_item,1490
+country|France,country,France,3,add_to_cart,291
+country|France,country,France,4,begin_checkout,101
+country|France,country,France,5,add_payment_info,76
+country|France,country,France,6,purchase,60
+country|Spain,country,Spain,1,entry,6666
+country|Spain,country,Spain,2,view_item,1387
+country|Spain,country,Spain,3,add_to_cart,281
+country|Spain,country,Spain,4,begin_checkout,109
+country|Spain,country,Spain,5,add_payment_info,78
+country|Spain,country,Spain,6,purchase,63
+country|Germany,country,Germany,1,entry,6387
+country|Germany,country,Germany,2,view_item,1246
+country|Germany,country,Germany,3,add_to_cart,233
+country|Germany,country,Germany,4,begin_checkout,88
+country|Germany,country,Germany,5,add_payment_info,67
+country|Germany,country,Germany,6,purchase,47
+country|China,country,China,1,entry,6250
+country|China,country,China,2,view_item,1341
+country|China,country,China,3,add_to_cart,278
+country|China,country,China,4,begin_checkout,91
+country|China,country,China,5,add_payment_info,56
+country|China,country,China,6,purchase,44
+country|Taiwan,country,Taiwan,1,entry,6049
+country|Taiwan,country,Taiwan,2,view_item,1306
+country|Taiwan,country,Taiwan,3,add_to_cart,258
+country|Taiwan,country,Taiwan,4,begin_checkout,87
+country|Taiwan,country,Taiwan,5,add_payment_info,66
+country|Taiwan,country,Taiwan,6,purchase,46
+country|Italy,country,Italy,1,entry,4996
+country|Italy,country,Italy,2,view_item,1109
+country|Italy,country,Italy,3,add_to_cart,211
+country|Italy,country,Italy,4,begin_checkout,76
+country|Italy,country,Italy,5,add_payment_info,43
+country|Italy,country,Italy,6,purchase,32
+device_category|desktop,device_category,desktop,1,entry,208758
+device_category|desktop,device_category,desktop,2,view_item,44783
+device_category|desktop,device_category,desktop,3,add_to_cart,8773
+device_category|desktop,device_category,desktop,4,begin_checkout,3109
+device_category|desktop,device_category,desktop,5,add_payment_info,2183
+device_category|desktop,device_category,desktop,6,purchase,1601
+device_category|mobile,device_category,mobile,1,entry,143063
+device_category|mobile,device_category,mobile,2,view_item,30484
+device_category|mobile,device_category,mobile,3,add_to_cart,6068
+device_category|mobile,device_category,mobile,4,begin_checkout,2194
+device_category|mobile,device_category,mobile,5,add_payment_info,1562
+device_category|mobile,device_category,mobile,6,purchase,1172
+device_category|tablet,device_category,tablet,1,entry,7994
+device_category|tablet,device_category,tablet,2,view_item,1698
+device_category|tablet,device_category,tablet,3,add_to_cart,321
+device_category|tablet,device_category,tablet,4,begin_checkout,113
+device_category|tablet,device_category,tablet,5,add_payment_info,86
+device_category|tablet,device_category,tablet,6,purchase,61
+traffic_medium (first touch)|organic,traffic_medium (first touch),organic,1,entry,122770
+traffic_medium (first touch)|organic,traffic_medium (first touch),organic,2,view_item,25720
+traffic_medium (first touch)|organic,traffic_medium (first touch),organic,3,add_to_cart,4732
+traffic_medium (first touch)|organic,traffic_medium (first touch),organic,4,begin_checkout,1591
+traffic_medium (first touch)|organic,traffic_medium (first touch),organic,5,add_payment_info,1099
+traffic_medium (first touch)|organic,traffic_medium (first touch),organic,6,purchase,798
+traffic_medium (first touch)|(none),traffic_medium (first touch),(none),1,entry,83394
+traffic_medium (first touch)|(none),traffic_medium (first touch),(none),2,view_item,17672
+traffic_medium (first touch)|(none),traffic_medium (first touch),(none),3,add_to_cart,3505
+traffic_medium (first touch)|(none),traffic_medium (first touch),(none),4,begin_checkout,1248
+traffic_medium (first touch)|(none),traffic_medium (first touch),(none),5,add_payment_info,867
+traffic_medium (first touch)|(none),traffic_medium (first touch),(none),6,purchase,643
+traffic_medium (first touch)|unknown,traffic_medium (first touch),unknown,1,entry,74591
+traffic_medium (first touch)|unknown,traffic_medium (first touch),unknown,2,view_item,16327
+traffic_medium (first touch)|unknown,traffic_medium (first touch),unknown,3,add_to_cart,3450
+traffic_medium (first touch)|unknown,traffic_medium (first touch),unknown,4,begin_checkout,1310
+traffic_medium (first touch)|unknown,traffic_medium (first touch),unknown,5,add_payment_info,939
+traffic_medium (first touch)|unknown,traffic_medium (first touch),unknown,6,purchase,693
+traffic_medium (first touch)|referral,traffic_medium (first touch),referral,1,entry,63451
+traffic_medium (first touch)|referral,traffic_medium (first touch),referral,2,view_item,14080
+traffic_medium (first touch)|referral,traffic_medium (first touch),referral,3,add_to_cart,2910
+traffic_medium (first touch)|referral,traffic_medium (first touch),referral,4,begin_checkout,1083
+traffic_medium (first touch)|referral,traffic_medium (first touch),referral,5,add_payment_info,805
+traffic_medium (first touch)|referral,traffic_medium (first touch),referral,6,purchase,609
+traffic_medium (first touch)|cpc,traffic_medium (first touch),cpc,1,entry,15609
+traffic_medium (first touch)|cpc,traffic_medium (first touch),cpc,2,view_item,3166
+traffic_medium (first touch)|cpc,traffic_medium (first touch),cpc,3,add_to_cart,565
+traffic_medium (first touch)|cpc,traffic_medium (first touch),cpc,4,begin_checkout,184
+traffic_medium (first touch)|cpc,traffic_medium (first touch),cpc,5,add_payment_info,121
+traffic_medium (first touch)|cpc,traffic_medium (first touch),cpc,6,purchase,91
+visitor_type|new,visitor_type,new,1,entry,261051
+visitor_type|new,visitor_type,new,2,view_item,52129
+visitor_type|new,visitor_type,new,3,add_to_cart,8844
+visitor_type|new,visitor_type,new,4,begin_checkout,2667
+visitor_type|new,visitor_type,new,5,add_payment_info,1536
+visitor_type|new,visitor_type,new,6,purchase,1111
+visitor_type|returning,visitor_type,returning,1,entry,98764
+visitor_type|returning,visitor_type,returning,2,view_item,24836
+visitor_type|returning,visitor_type,returning,3,add_to_cart,6318
+visitor_type|returning,visitor_type,returning,4,begin_checkout,2749
+visitor_type|returning,visitor_type,returning,5,add_payment_info,2295
+visitor_type|returning,visitor_type,returning,6,purchase,1723

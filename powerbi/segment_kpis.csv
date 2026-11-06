@@ -1,0 +1,23 @@
+segment_key,dimension,segment,sessions,users,sessions_with_purchase,purchases,revenue,buyers,reliable
+all|all sessions,all,all sessions,360129,270154,4848,4451,307640.0,3702,TRUE
+country|United States,country,United States,158155,118493,2117,1934,135406.0,1613,TRUE
+country|Other,country,Other,92519,69270,1244,1145,75321.0,955,TRUE
+country|India,country,India,33769,25367,449,403,29156.0,338,TRUE
+country|Canada,country,Canada,26824,20268,390,362,27176.0,298,TRUE
+country|United Kingdom,country,United Kingdom,11327,8527,151,136,9853.0,118,TRUE
+country|France,country,France,7162,5381,102,97,5893.0,84,TRUE
+country|Spain,country,Spain,6667,5044,99,106,6864.0,76,TRUE
+country|Germany,country,Germany,6393,4866,81,71,4859.0,63,TRUE
+country|China,country,China,6258,4620,80,78,5133.0,55,TRUE
+country|Taiwan,country,Taiwan,6057,4568,80,69,3571.0,59,TRUE
+country|Italy,country,Italy,4998,3750,55,50,4408.0,43,TRUE
+device_category|desktop,device_category,desktop,208942,158917,2749,2554,178182.0,2137,TRUE
+device_category|mobile,device_category,mobile,143185,109195,1995,1814,124160.0,1543,TRUE
+device_category|tablet,device_category,tablet,8002,6250,104,83,5298.0,77,TRUE
+traffic_medium (first touch)|organic,traffic_medium (first touch),organic,122841,112358,1347,1244,90375.0,1128,TRUE
+traffic_medium (first touch)|(none),traffic_medium (first touch),(none),83459,75951,1079,966,68191.0,860,TRUE
+traffic_medium (first touch)|unknown,traffic_medium (first touch),unknown,74687,65309,1213,1120,70681.0,979,TRUE
+traffic_medium (first touch)|referral,traffic_medium (first touch),referral,63524,55495,1056,990,70878.0,852,TRUE
+traffic_medium (first touch)|cpc,traffic_medium (first touch),cpc,15618,15528,153,131,7515.0,128,TRUE
+visitor_type|new,visitor_type,new,261238,261148,1780,1589,102941.0,1503,TRUE
+visitor_type|returning,visitor_type,returning,98891,51885,3068,2862,204699.0,2276,TRUE

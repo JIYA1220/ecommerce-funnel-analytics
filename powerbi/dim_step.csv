@@ -1,0 +1,7 @@
+step_no,step
+1,entry
+2,view_item
+3,add_to_cart
+4,begin_checkout
+5,add_payment_info
+6,purchase
